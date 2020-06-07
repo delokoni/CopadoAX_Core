@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CAX_FunctionalTestingCompleted</fullName>
+    <active>false</active>
+    <description>Before a story can be promoted from UAT onwards, functional testing needs to be completed</description>
+    <errorConditionFormula>AND(
+  $Permission.OverrideCopadoQualityGates = FALSE, 
+  ISPICKVAL( copado__Environment__r.EnvironmentPurpose__c, &quot;UAT&quot;), 
+  OR( 
+    AND(
+      PRIORVALUE(copado__Promote_Change__c) = false,
+      copado__Promote_Change__c = true
+    ),
+    AND(
+      PRIORVALUE(copado__Promote_and_Deploy__c) = false,
+      copado__Promote_and_Deploy__c = true
+    )
+  ),
+  OR(
+    copado__Manual_Tests_Passed__c = FALSE
+  )
+)</errorConditionFormula>
+    <errorMessage>Before you can move the story from UAT onwards, functional testing must be completed. Please check with the testing team and update the status on the story, if applicable.</errorMessage>
+</ValidationRule>

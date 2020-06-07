@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>copado__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Current status of the implementation of the User Story.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Current status of the implementation of the User Story.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Draft</fullName>
+                <default>true</default>
+                <label>Draft</label>
+            </value>
+            <value>
+                <fullName>Backlog</fullName>
+                <default>false</default>
+                <label>Backlog</label>
+            </value>
+            <value>
+                <fullName>Definition</fullName>
+                <default>false</default>
+                <label>Definition</label>
+            </value>
+            <value>
+                <fullName>Prioritization</fullName>
+                <default>false</default>
+                <label>Prioritization</label>
+            </value>
+            <value>
+                <fullName>Estimation</fullName>
+                <default>false</default>
+                <label>Estimation</label>
+            </value>
+            <value>
+                <fullName>Ready</fullName>
+                <default>false</default>
+                <label>Ready</label>
+            </value>
+            <value>
+                <fullName>Sprint Backlog</fullName>
+                <default>false</default>
+                <label>Sprint Backlog</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Ready for Review</fullName>
+                <default>false</default>
+                <label>Ready for Review</label>
+            </value>
+            <value>
+                <fullName>Review Approved</fullName>
+                <default>false</default>
+                <label>Review Approved</label>
+            </value>
+            <value>
+                <fullName>Deployed to INT</fullName>
+                <default>false</default>
+                <label>Deployed to INT</label>
+            </value>
+            <value>
+                <fullName>Ready for UAT</fullName>
+                <default>false</default>
+                <label>Ready for UAT</label>
+            </value>
+            <value>
+                <fullName>Ready for Testing</fullName>
+                <default>false</default>
+                <label>Ready for Testing</label>
+            </value>
+            <value>
+                <fullName>UAT Passed</fullName>
+                <default>false</default>
+                <label>UAT Passed</label>
+            </value>
+            <value>
+                <fullName>Deployed to Stage</fullName>
+                <default>false</default>
+                <label>Deployed to Stage</label>
+            </value>
+            <value>
+                <fullName>Stage Regression Passed</fullName>
+                <default>false</default>
+                <label>Stage Regression Passed</label>
+            </value>
+            <value>
+                <fullName>Ready for Release</fullName>
+                <default>false</default>
+                <label>Ready for Release</label>
+            </value>
+            <value>
+                <fullName>Released</fullName>
+                <default>false</default>
+                <label>Released</label>
+            </value>
+            <value>
+                <fullName>Done</fullName>
+                <default>false</default>
+                <label>Done</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CAX_TechnicalReviewPassed</fullName>
+    <active>false</active>
+    <description>The story must have passed a technical review or pull request, before being promoted</description>
+    <errorConditionFormula>AND(
+  $Permission.OverrideCopadoQualityGates = FALSE, 
+  OR( 
+    AND(
+      PRIORVALUE(copado__Promote_Change__c) = false,
+      copado__Promote_Change__c = true
+    ),
+    AND(
+      PRIORVALUE(copado__Promote_and_Deploy__c) = false,
+      copado__Promote_and_Deploy__c = true
+    )
+  ),
+  OR(
+    copado__Pull_Requests_Approved__c = FALSE
+  )
+)</errorConditionFormula>
+    <errorMessage>Before the story can be promoted, it needs to pass a technical review.</errorMessage>
+</ValidationRule>

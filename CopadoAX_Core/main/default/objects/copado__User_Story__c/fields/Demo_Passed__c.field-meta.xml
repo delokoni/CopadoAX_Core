@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demo_Passed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>To be checked after a dev demo to business or Product Owner in case a story is set to be part of such a demo.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>To be checked after a dev demo to business or Product Owner in case a story is set to be part of such a demo.</inlineHelpText>
+    <label>Demo Passed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

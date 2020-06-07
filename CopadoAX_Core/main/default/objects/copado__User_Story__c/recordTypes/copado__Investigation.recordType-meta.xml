@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>copado__Investigation</fullName>
+    <active>true</active>
+    <label>Investigation</label>
+    <picklistValues>
+        <picklist>copado__Status__c</picklist>
+        <values>
+            <fullName>Backlog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Definition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deployed to INT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Estimation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prioritization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Released</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sprint Backlog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stage Regression Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UAT Passed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CAX_DemoNeedsToBePassed</fullName>
+    <active>false</active>
+    <description>If a story is scheduled to be demoed to business by a dev before deployments to higher orgs, this quality gate needs to be passed.</description>
+    <errorConditionFormula>AND(
+  /** override quality gate with a permission **/
+  $Permission.OverrideCopadoQualityGates = FALSE,
+  /** if someone tries to promote the story **/ 
+  OR( 
+    AND(
+      PRIORVALUE(copado__Promote_Change__c) = false,
+      copado__Promote_Change__c = true
+    ),
+    AND(
+      PRIORVALUE(copado__Promote_and_Deploy__c) = false,
+      copado__Promote_and_Deploy__c = true
+    )
+  ),
+  /**certain quality gates need to be passed **/
+  AND(
+     Demo_Required__c = TRUE,
+      Demo_Passed__c = FALSE
+  )
+)</errorConditionFormula>
+    <errorMessage>The story is required to have a successfully approved demo to business prior to deployment.</errorMessage>
+</ValidationRule>

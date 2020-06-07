@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CAX_SuccessfulValidationRequired</fullName>
+    <active>false</active>
+    <description>Before a story can be promoted, it needs to be successfully validated.</description>
+    <errorConditionFormula>AND(
+  $Permission.OverrideCopadoQualityGates = FALSE, 
+  OR( 
+    AND(
+      PRIORVALUE(copado__Promote_Change__c) = false,
+      copado__Promote_Change__c = true
+    ),
+    AND(
+      PRIORVALUE(copado__Promote_and_Deploy__c) = false,
+      copado__Promote_and_Deploy__c = true
+    )
+  ),
+  OR(
+    ISNULL(copado__Last_Validation_Deployment__c),
+    ISNULL(copado__Last_Validation_Deployment_Status__c),
+    ISBLANK(copado__Last_Validation_Deployment__c),
+    ISBLANK(copado__Last_Validation_Deployment_Status__c), 
+    NOT(CONTAINS(copado__Last_Validation_Deployment_Status__c, &quot;Completed Successfully&quot;))
+  )
+)</errorConditionFormula>
+    <errorMessage>Before a user story can move to the next environment it needs to have a successful validation.
+Click the &quot;Validate Changes&quot; button to launch a validation deployment.</errorMessage>
+</ValidationRule>
