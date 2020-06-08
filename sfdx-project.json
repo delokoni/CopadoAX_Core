@@ -9,17 +9,17 @@
             "path": "CopadoAX_Core",
             "package": "0Ho0O0000004CABSA2",
             "definitionFile": "config/project-scratch-def.json",
-            "default": true
+            "default": true,
+            "dependencies": [ 
+                {
+                   "package": "Copado Deployer",
+                   "versionNumber": "15.LATEST"
+                }
+             ]
         }
     ],
-    "dependencies": [ 
-        {
-           "package": "Copado Deployer",
-           "versionNumber": "15.LATEST"
-        }
-     ],
     "packageAliases": {
-        "CopadoAX_Core": "0Ho0O0000004CABSA2"
+        "CopadoAX Core Package": "0Ho0O0000004CABSA2"
     },
     "namespace": "CopadoAX"
 }
