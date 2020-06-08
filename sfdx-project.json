@@ -3,7 +3,7 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "packageDirectories": [
         {
-            "versionNumber": "1.0.0.0",
+            "versionNumber": "0.1.0.NEXT",
             "versionName": "CopaDeBalon",
             "versionDescription": "",
             "path": "CopadoAX_Core",
@@ -12,14 +12,13 @@
             "default": true,
             "dependencies": [ 
                 {
-                   "package": "Copado Deployer",
-                   "versionNumber": "15.LATEST"
+                   "package": "Copado Deployer@15.0.19"
                 }
              ]
         }
     ],
     "packageAliases": {
-        "CopadoAX Core Package": "0Ho0O0000004CABSA2"
+        "CopadoAX_Core": "0Ho0O0000004CABSA2"
     },
     "namespace": "CopadoAX"
 }
