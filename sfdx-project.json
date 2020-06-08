@@ -12,7 +12,7 @@
             "default": true,
             "dependencies": [ 
                 {
-                   "package": "Copado Deployer@15.0.19"
+                   "subscriberPackageVersionId": "04t0N000001E7Km"
                 }
              ]
         }
