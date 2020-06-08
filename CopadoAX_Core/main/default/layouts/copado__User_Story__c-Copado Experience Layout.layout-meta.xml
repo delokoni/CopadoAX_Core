@@ -471,7 +471,6 @@
     <relatedLists>
         <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
-        <fields>AllViolationsCovered__c</fields>
         <fields>copado__Blocker__c</fields>
         <fields>copado__Critical__c</fields>
         <fields>copado__Highest_Priority_Violation__c</fields>
