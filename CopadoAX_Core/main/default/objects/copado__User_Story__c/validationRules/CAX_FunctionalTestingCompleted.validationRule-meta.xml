@@ -5,7 +5,7 @@
     <description>Before a story can be promoted from UAT onwards, functional testing needs to be completed</description>
     <errorConditionFormula>AND(
   $Permission.OverrideCopadoQualityGates = FALSE, 
-  ISPICKVAL( copado__Environment__r.EnvironmentPurpose__c, &quot;UAT&quot;), 
+  copado__Environment__r.Name = &quot;UAT&quot;, 
   OR( 
     AND(
       PRIORVALUE(copado__Promote_Change__c) = false,
