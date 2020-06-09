@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>copado__Priority__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Numeric value to determine which User Stories are more urgent and should be completed first.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Numeric value to determine which User Stories are more urgent and should be completed first.</inlineHelpText>
+    <label>Priority</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

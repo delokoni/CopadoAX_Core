@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>copado__Team__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Team which will tackle the User Story.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Team which will tackle the User Story.</inlineHelpText>
+    <label>Team</label>
+    <referenceTo>copado__Team__c</referenceTo>
+    <relationshipLabel>User Stories</relationshipLabel>
+    <relationshipName>User_Stories</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

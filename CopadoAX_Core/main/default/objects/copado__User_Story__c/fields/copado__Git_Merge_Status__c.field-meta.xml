@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>copado__Git_Merge_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The git merge status of the latest pull request between the feature branch and the target branch. This value is provided by the Git Repository. If there is no value, the Git Repository did not provide one.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The git merge status of the latest pull request between the feature branch and the target branch. This value is provided by the Git Repository. If there is no value, the Git Repository did not provide one.</inlineHelpText>
+    <label>Git Merge Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mergeable</fullName>
+                <default>false</default>
+                <label>Mergeable</label>
+            </value>
+            <value>
+                <fullName>Conflicts Detected</fullName>
+                <default>false</default>
+                <label>Conflicts Detected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

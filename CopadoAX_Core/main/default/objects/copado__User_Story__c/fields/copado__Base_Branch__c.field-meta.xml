@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>copado__Base_Branch__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Git branch which the feature branch is created from. This value is updated when committing in the user story and by default, it will be the main branch of the Deployment Flow or the base branch of the Release linked to the user story.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Git branch which the feature branch is created from. This value is updated when committing in the user story and by default, it will be the main branch of the Deployment Flow or the base branch of the Release linked to the user story.e user story.</inlineHelpText>
+    <label>Base Branch</label>
+    <length>180</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

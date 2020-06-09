@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>copado__Last_Compliance_Scan_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Latest Compliance Scan execution date.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Latest Compliance Scan execution date.</inlineHelpText>
+    <label>Last Compliance Scan Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

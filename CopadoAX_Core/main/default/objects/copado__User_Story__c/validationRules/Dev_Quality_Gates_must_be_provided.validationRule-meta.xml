@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dev_Quality_Gates_must_be_provided</fullName>
+    <active>false</active>
+    <description>To deploy a story to UAT it requires a documentation, an approved test script and the peer review should be passed. Please refer to internal process documentation for more info.</description>
+    <errorConditionFormula>AND(
+  BEGINS(copado__Environment__r.Name, &quot;Dev&quot;), 
+  OR(
+    copado__Promote_and_Deploy__c = TRUE,
+    copado__Promote_Change__c = TRUE
+  ),
+  OR(
+    ISBLANK( DocumentationLocation__c ),
+    TestScriptReady__c = FALSE,
+    PeerReviewPassed__c = FALSE
+  )
+)</errorConditionFormula>
+    <errorMessage>To deploy a story to UAT it requires a documentation, an approved test script and the peer review should be passed. Please refer to internal process documentation for more info.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>copado__Commit_Files</fullName>
+    <availability>online</availability>
+    <description>Execute Git actions linked to the user story.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Commit Changes</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/{!IF(CONTAINS($Action.copado__User_Story__c.New, &#39;copado__&#39;), &#39;copado__&#39;, &#39;&#39;)}GitCommitMain?userStoryId={!copado__User_Story__c.Id}&amp;variant={!IF( copado__User_Story__c.copado__Environment_Type__c  = &#39;Scratch Org&#39;, &#39;dxcommit&#39;, &#39;userstorycommit&#39;)}</url>
+</WebLink>

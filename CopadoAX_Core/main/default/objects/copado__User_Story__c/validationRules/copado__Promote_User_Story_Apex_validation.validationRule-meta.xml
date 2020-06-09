@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>copado__Promote_User_Story_Apex_validation</fullName>
+    <active>true</active>
+    <description>If User Story has apex code, validate that the minimum code coverage has been met.</description>
+    <errorConditionFormula>AND(
+  copado__Has_Apex_Code__c = true,
+  OR(  
+     AND(
+       PRIORVALUE(copado__Promote_Change__c) = false,
+        copado__Promote_Change__c = true
+     ),
+     AND(
+      PRIORVALUE(copado__Promote_and_Deploy__c) = false,
+       copado__Promote_and_Deploy__c = true
+        )
+     ),
+  OR(
+    ISNULL(copado__Apex_Code_Coverage__c),
+    ISNULL(copado__Minimum_Apex_Code_Coverage__c),
+    copado__Apex_Code_Coverage__c &lt; copado__Minimum_Apex_Code_Coverage__c
+  )
+)</errorConditionFormula>
+    <errorMessage>This User Story does not meet the required Apex coverage threshold to be promoted.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>copado__Test_scratch_orgs_cannot_be_used_for_dev</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(copado__Org_Credential__r.copado__Org_Type__c) == &#39;Scratch Org - Test only&#39;</errorConditionFormula>
+    <errorDisplayField>copado__Org_Credential__c</errorDisplayField>
+    <errorMessage>Test scratch orgs cannot be used for developments</errorMessage>
+</ValidationRule>

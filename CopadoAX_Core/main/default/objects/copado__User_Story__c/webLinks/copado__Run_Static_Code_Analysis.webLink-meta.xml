@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>copado__Run_Static_Code_Analysis</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>page</linkType>
+    <masterLabel>Run Static Code Analysis</masterLabel>
+    <openType>replace</openType>
+    <page>copado__UserStoryCodeAnalysisRequested</page>
+    <protected>false</protected>
+</WebLink>

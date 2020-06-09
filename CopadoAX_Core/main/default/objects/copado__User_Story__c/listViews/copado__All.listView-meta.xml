@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>copado__All</fullName>
+    <columns>NAME</columns>
+    <columns>copado__User_Story_Title__c</columns>
+    <columns>copado__Org_Credential__c</columns>
+    <columns>copado__Environment__c</columns>
+    <columns>JIRA_key__c</columns>
+    <columns>copado__Promote_Change__c</columns>
+    <columns>copado__Status__c</columns>
+    <columns>copado__Project__c</columns>
+    <columns>copado__Has_Apex_Code__c</columns>
+    <columns>copado__Latest_Commit_Date__c</columns>
+    <columns>copado__Last_Promotion_Date__c</columns>
+    <columns>copado__Epic__c</columns>
+    <columns>copado__Sprint__c</columns>
+    <columns>copado__Release__c</columns>
+    <columns>copado__Last_Validation_Deployment_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Release_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Release Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Ready for SIT</fullName>
+                <default>false</default>
+                <label>Ready for SIT</label>
+            </value>
+            <value>
+                <fullName>Deployed to SIT</fullName>
+                <default>false</default>
+                <label>Deployed to SIT</label>
+            </value>
+            <value>
+                <fullName>Ready for UAT</fullName>
+                <default>false</default>
+                <label>Ready for UAT</label>
+            </value>
+            <value>
+                <fullName>Deployed to UAT</fullName>
+                <default>false</default>
+                <label>Deployed to UAT</label>
+            </value>
+            <value>
+                <fullName>Ready for Prod</fullName>
+                <default>false</default>
+                <label>Ready for Prod</label>
+            </value>
+            <value>
+                <fullName>Deployed to Prod</fullName>
+                <default>false</default>
+                <label>Deployed to Prod</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
