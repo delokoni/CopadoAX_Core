@@ -1,1 +1,4 @@
 #put stuff to ignore here below!
+.idea/CopadoAX_Core.iml
+.idea/modules.xml
+.idea/vcs.xml
